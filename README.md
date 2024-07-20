@@ -1,2 +1,2 @@
 # hooking_engine
-A poc hooking engine for hooking win32 api.
+A poc hooking engine for hooking win32 api. It uses udis86 under the hood to disassemble the instructions. This is NOT meant to be used for hooking api during the execution of process, rather it is meant to be used in my EDR project where a process is created in suspended mode and the process is NOT executing. Also, it is tested only for x64 instruction set and doesn't work for x86. Be warned!
